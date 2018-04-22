@@ -29,7 +29,7 @@
    	<dc:place rdf:resource="http://www.semanticweb.org/waterlod/Rochefort"/>
     <dc:date>13/07/1815</dc:date>
     <skos:broader rdf:resource="http://dbpedia.org/page/Category:Peace_processes"/>
-    <wn:inSynset rdf:resource="http://dbpedia.org/page/Category:Dispute_resolution"/>
+    <skos:broader rdf:resource="http://dbpedia.org/page/Category:Dispute_resolution"/>
     <wn:hypernym rdf:resource="http://dbpedia.org/page/Dialogue"/>
 	</rdf:Description>
   </rdf:RDF>

@@ -109,27 +109,116 @@
 					Connection to authorities and other resources
 					</h2>
 					<div>
-						<p class="animate-box">We created URIs for 3 different entities and we described each of them in RDF/XML, one of the possibile serializations of RDF:
+						<p class="animate-box">We have connected our data to other related items, in particular to the <mark style="background-color: #cc0000; opacity:0.8; color:white;">same authorites for names</mark> (people, places, subjects) and to <mark style="background-color: #cc0000; opacity:0.8; color:white;">other resources</mark>, related because of the sharing of one of the features of the object, creating <mark style="background-color: #cc0000; opacity:0.8; color:white;">semantic associations</mark>. In details, <a id="rdfxml">check RDF/XML files</a> of:
 							<ul class="animate-box">
-								<li>PEOPLE - Napoleon: <mark style="background-color: #cc0000; opacity:0.8; color:white;">www.semanticweb.org/waterlod/Napoleon</mark></li>
-							</br>
+								<li>PEOPLE - Napoleon: <a href="#rdfpeople">www.semanticweb.org/waterlod/Napoleon</a></li>
+								<li>PLACE - Rochefort: <a href="#rdfplace">www.semanticweb.org/waterlod/Rochefort</a></li>
+								<li>CONCEPT/SUBJECT - <a href="#rdfconcept">Surrender: www.semanticweb.org/waterlod/Napoleon_surrender</a></li>
+							</ul>
+
+						</br>
+						<hr>
+							<ul class="animate-box">
+								<li>PEOPLE - Napoleon: <a id="rdfpeople">www.semanticweb.org/waterlod/Napoleon</a></lI>
+									<p>
+										<ul>
+										<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">owl:sameAs rdf:resource="https://viaf.org/viaf/106964661/"</mark>
+										</br>
+										</br>
+										<p>"owl:sameAs", a property of OWL Ontology, is connected to "<a href="https://viaf.org/viaf/106964661/" target="_blank">https://viaf.org/viaf/106964661/</a>". This means that "www.semanticweb.org/waterlod/Napoleon", the URI of Napoleon, and "https://viaf.org/viaf/106964661/", coming from VIAF, an international authority file,share features. In this case they both concern the person Napoleon.</p>
+										</li>
+
+										<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">owl:sameAs rdf:resource="http://dbpedia.org/page/Napoleon"</mark>
+										</br>
+										</br>
+										<p>"owl:sameAs", a property of OWL Ontology, is connected to "<a href="http://dbpedia.org/page/Napoleon" target="_blank">http://dbpedia.org/page/Napoleon</a>". This means that "www.semanticweb.org/waterlod/Napoleon", the URI of Napoleon, and "http://dbpedia.org/page/Napoleon", coming from DBpedia, a website containing a knowledge-base, share features. In this case they both concern the person Napoleon.</p>
+										</li>
+
+										<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">owl:differentFrom rdf:resource="http://dbpedia.org/page/Napoleon_III"</mark>
+										</br>
+										</br>
+										<p>"owl:differentFrom", a property of OWL Ontology, is connected to "<a href="http://dbpedia.org/page/Napoleon_III" target="_blank">http://dbpedia.org/page/Napoleon_III</a>". This means that "www.semanticweb.org/waterlod/Napoleon", the URI of Napoleon, and "http://dbpedia.org/page/Napoleon_III", coming from DBpedia, a website containing a knowledge-base, express totally different concepts. In this case Napoleon is different from Napoleon III, or better, Napoleon and Napoleon III are not the same person.</p>
+										</li>
+										</ul>
+									</p>
+									</br>
 							<img src="images/connectionnapoleon.png" alt="" class="animate-box img-responsive">
 							</br>
-							<p class="animate-box" data-animate-effect="fadeInLeft"><i class="far fa-arrow-alt-circle-right"></i> <span>View the online-version of the <a href="xml/napoleon.xml" target="_blank">RDF/XML</a> of this entity here.</span></p>
+							<p class="animate-box" data-animate-effect="fadeInLeft"><i class="far fa-arrow-alt-circle-right"></i> <span>Check the online-version of the <a href="xml/napoleon.xml" target="_blank">RDF/XML</a> of this entity here.</span></p>
+							<p class="animate-box" data-animate-effect="fadeInLeft">Go back to the <a href="#rdfxml">check of RDF/XML files</a>.</p>
+							
+							
+							
+
+							<hr>
+
 							</br>
-							</br>
-								<li>PLACE - Rochefort: <mark style="background-color: #cc0000; opacity:0.8; color:white;">www.semanticweb.org/waterlod/Rochefort</mark></li>
-							</br>
+
+							
+
+								<li>PLACE - Rochefort: <a id="rdfplace">www.semanticweb.org/waterlod/Rochefort</a></li>
+								<p>
+										<ul class="animate-box">
+										<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">owl:sameAs rdf:resource="https://viaf.org/viaf/129904479/#Rochefort_(France)</mark>
+										</br>
+										</br>
+										<p>"owl:sameAs", a property of OWL Ontology, is connected to "<a href="https://viaf.org/viaf/129904479/#Rochefort_(France)" target="_blank">https://viaf.org/viaf/129904479/#Rochefort_(France)</a>". This means that "www.semanticweb.org/waterlod/Rochefort", the URI of Rochefort, and "https://viaf.org/viaf/129904479/#Rochefort_(France)", coming from VIAF, an international authority file,share features. In this case they both concern the place Rochefort.</p>
+										</li>
+
+										<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">owl:sameAs rdf:resource="http://dbpedia.org/page/Rochefort,_Charente-Maritime"</mark>
+										</br>
+										</br>
+										<p>"owl:sameAs", a property of OWL Ontology, is connected to "<a href="http://dbpedia.org/page/Napoleon" target="_blank">http://dbpedia.org/page/Rochefort,_Charente-Maritime</a>". This means that "www.semanticweb.org/waterlod/Rochefort", the URI of Napoleon, and "http://dbpedia.org/page/Rochefort,_Charente-Maritime", coming from DBpedia, a website containing a knowledge-base, share features. In this case they both concern the place Rochefort.</p>
+										</li>
+
+										<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">owl:differentFrom rdf:resource="http://it.dbpedia.org/resource/Cantone_di_Rochefort-en-Terre/html"</mark>
+										</br>
+										</br>
+										<p>"owl:differentFrom", a property of OWL Ontology, is connected to "<a href="http://it.dbpedia.org/resource/Cantone_di_Rochefort-en-Terre/html" target="_blank">http://it.dbpedia.org/resource/Cantone_di_Rochefort-en-Terre/html</a>". This means that "www.semanticweb.org/waterlod/Rochefort", the URI of Rochefort, and "http://it.dbpedia.org/resource/Cantone_di_Rochefort-en-Terre/html", coming from DBpedia, a website containing a knowledge-base, express totally different concepts. In this case Rochefort is different from Rochefort-en-Terre, or better, Rochefort and Rochefort-en-Terre are not the same place.</p>
+										</li>
+										</ul>
+									</p>
+									</br>
 							<img src="images/connectionplace.png" alt="" class="animate-box img-responsive">
 							</br>
-							<p class="animate-box" data-animate-effect="fadeInLeft"><i class="far fa-arrow-alt-circle-right"></i> <span>View the online-version of the <a href="xml/rochefort.xml" target="_blank">RDF/XML</a> of this entity here.</span></p>
+							<p class="animate-box" data-animate-effect="fadeInLeft"><i class="far fa-arrow-alt-circle-right"></i> <span>Check the online-version of the <a href="xml/rochefort.xml" target="_blank">RDF/XML</a> of this entity here.</span></p>
+							<p class="animate-box" data-animate-effect="fadeInLeft">Go back to the <a href="#rdfxml">check of RDF/XML files</a>.</p>
+
+							
+
+							<hr>
+
 							</br>
-							</br>
-								<li>CONCEPT/SUBJECT: <mark style="background-color: #cc0000; opacity:0.8; color:white;">www.semanticweb.org/waterlod/Napoleon_surrender</mark></li>
+
+
+							<li class="animate-box">CONCEPT/SUBJECT - Surrender: <a id="rdfconcept">www.semanticweb.org/waterlod/Napoleon_surrender</a></li>
+							<p>
+								<ul class="animate-box">
+									<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">skos:broader rdf:resource="http://dbpedia.org/page/Category:Peace_processes"</mark>
+									</br>
+									</br>
+									<p>"skos:broader", a property of SKOS, a Semantic Web-driven method of encoding structured vocabularies in RDF, is connected to "<a href="http://dbpedia.org/page/Category:Peace_processes" target="_blank">http://dbpedia.org/page/Category:Peace_processes</a>". This means that "www.semanticweb.org/waterlod/Napoleon_surrender", the URI of Napoleon's surrender, and "http://dbpedia.org/page/Category:Peace_processes", coming from DBpedia, a website containing a knowledge-base,share features. In this case they "Peace process" is an hyperonym of "Surrender".</p>
+									</li>
+
+										<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">"skos:broader" rdf:resource="http://dbpedia.org/page/Category:Dispute_resolution"</mark>
+										</br>
+										</br>
+										<p>"skos:broader" a property of SKOS, a Semantic Web-driven method of encoding structured vocabularies in RDF, is connected to "<a href="http://dbpedia.org/page/Category:Dispute_resolution" target="_blank">http://dbpedia.org/page/Category:Dispute_resolution</a>". This means that "www.semanticweb.org/waterlod/Napoleon_surrender", the URI of Napoleon's surrender, and "http://dbpedia.org/page/Category:Dispute_resolution", coming from DBpedia, a website containing a knowledge-base, share features. In this case "Dispute resolution" is an hyperonym of "Surrender".</p>
+										</li>
+
+										<li><mark style="background-color: #cc0000; opacity:0.8; color:white;">wn:hypernym rdf:resource="http://dbpedia.org/page/Dialogue"</mark>
+										</br>
+										</br>
+										<p>"wn:hypernym", a property of WordNet, a semantic network, is connected to "<a href="http://dbpedia.org/page/Dialogue" target="_blank">http://dbpedia.org/page/Dialogue</a>". This means that "www.semanticweb.org/Napoleon_surrender", the URI of Napoleon's surrender, and "http://dbpedia.org/page/Dialogue", coming from DBpedia, a website containing a knowledge-base, share features. In this case "Dialogue" is hyperonym of "Napoleon's surrender".</p>
+										</li>
+										</ul>
+									</p>
 							</br>
 							<img src="images/connectionconcept.png" alt="" class="animate-box img-responsive">
 							</br>
-							<p class="animate-box" data-animate-effect="fadeInLeft"><i class="far fa-arrow-alt-circle-right"></i> <span>View the online-version of the <a href="xml/surrender.xml" target="_blank">RDF/XML</a> of this entity here.</span></p>
+							<p class="animate-box" data-animate-effect="fadeInLeft"><i class="far fa-arrow-alt-circle-right"></i> <span>Check the online-version of the <a href="xml/surrender.xml" target="_blank">RDF/XML</a> of this entity here.</span></p>
+							<p class="animate-box" data-animate-effect="fadeInLeft">Go back to the <a href="#rdfxml">check of RDF/XML files</a>.</p>
+
 							</br>
 							</br>
 							</ul>

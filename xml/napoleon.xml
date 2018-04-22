@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+  xmlns="http://www.semanticweb.org/waterlod/Napoleon" xml:base="http://www.semanticweb.org/waterlod/Napoleon" 
+  xmlns:ns="http://creativecommons.org/ns#" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+  xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:dcterms="http://purl.org/dc/terms/" 
+  xmlns:gn="http://www.geonames.org/ontology#" 
+  xmlns:frbr="http://purl.org/vocab/frbr/core#" 
+  xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:eac-cpf="http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="http://www.semanticweb.org/waterlod/Napoleon">
+  <eac-cpf:entity>Person</eac-cpf:entity>
+  <eac-cpf:nameEntry>Napoléon Bonaparte</eac-cpf:nameEntry>
+  <eac-cpf:chronItem rdf:parseType="Resource">
+    <eac-cpf:event>Birth</eac-cpf:event>  
+    <eac-cpf:place rdf:resource="http://dbpedia.org/page/Ajaccio"/>
+    <eac-cpf:date>15/09/1769</eac-cpf:date>
+  </eac-cpf:chronItem>
+  <eac-cpf:chronItem rdf:parseType="Resource">
+    <eac-cpf:event>Death</eac-cpf:event>  
+    <eac-cpf:place rdf:resource="http://dbpedia.org/page/Saint_Helena"/>
+    <eac-cpf:date>05/05/1821</eac-cpf:date>
+  </eac-cpf:chronItem>
+  <eac-cpf:biogHist>Napoléon Bonaparte was a French statesman and military leader
+  who rose to prominence during the French Revolution and led several successful 
+  campaigns during the French Revolutionary Wars. As Napoleon, he was Emperor of
+  the French from 1804 until 1814, and again briefly in 1815 during the Hundred Days.</eac-cpf:biogHist>
+  <eac-cpf:resourceRelation rdf:parseType="Resource">
+    <eac-cpf:resourceRelationType>subjectOf</eac-cpf:resourceRelationType>
+    <dc:description>After the Battle of Waterloo, Napoleon abdicated and attempted to
+    flee to Europe, but was prevented by a British blockade of French ports.
+    For this reason, he surrendered.</dc:description>
+    <dcterms:relation rdf:resource="http://www.semanticweb.org/waterlod/Letter/"/>
+    <dc:date>13/07/1815</dc:date>
+  </eac-cpf:resourceRelation>
+  <owl:sameAs rdf:resource="https://viaf.org/viaf/106964661/"/>
+  <owl:sameAs rdf:resource="http://dbpedia.org/page/Napoleon"/>
+  <owl:differentFrom rdf:resource="http://dbpedia.org/page/Napoleon_III"/>
+  </rdf:Description>
+</rdf:RDF>

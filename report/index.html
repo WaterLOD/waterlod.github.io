@@ -31,17 +31,18 @@
 <section id="section1">
 <h1>The idea</h1>
 <p>We have selected an idea from the <a href="https://en.wikipedia.org/wiki/Battle_of_Waterloo" rel="noopener">Battle of Waterloo Wikipedia page</a>. Our idea involves <strong>Napoleone Bonaparte</strong> as person, <strong>Waterloo</strong> as place, <strong>Defeat</strong> as concept and <strong>1815</strong> as Date. </p>
-</section>
 <section id="section2">
 <h1>E-R diagram</h1>
+<p>In this model we have: <strong>entities</strong>, which are represented as rectangles and <strong>relationships</strong> represented as rhombus</p>
 <figure id="img_1">
 <p><img src="img/er.jpg" alt="img/er.jpg" /></p>
 <figcaption>The E-R diagram of our idea.</figcaption>
 </figure>
 </section>
+</section>
 <section id="section3">
 <h1>The set of items</h1>
-<p>In this section will be displayed the set of items that will be described following the <strong>LAM guidelines</strong>.</p>
+<p>In this section are listed the items that will be described following the <strong>LAM guidelines</strong> in the following sections. Is very important to say that <strong>a great number of the retrieved items are provided without metadata</strong>.</p>
 <ol>
 <li>
 <p><strong>Rendigote et bicorne de Napoléon Ier</strong>, Artifact [<a href="http://www.musee-armee.fr/collections/base-de-donnees-des-collections/objet/redingote-et-bicorne-de-napoleon-ier.html" rel="noopener">Musée de l'Armée</a><span style="font-size: 12pt;">]</span></p>
@@ -89,7 +90,7 @@
 <section id="section15">
 <h1>Who (people)</h1>
 <p>Here the main problem is to explicitly declare the different roles of a single person that, in turn, can be viewed as single person, family or corporate body. Anyway, a single "person" can be referred as "the creator", "the user" or "the owner" of an item. For these reasons we think that <a href="http://archivi.ibc.regione.emilia-romagna.it/ontology/reference_document/referencedocument.html#http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/entity" rel="noopener">EAC-CPF</a> and <a href="http://xmlns.com/foaf/spec/" rel="noopener">FOAF</a> can be used for our purposes.</p>
-<p>Our thoughs were start with <strong>FOAF: Friend Of A Friend Ontology</strong>, we have some useful properties to describe real people (eg: Napoleone Bonaparte) and some useful general information about the person. It answer to some basic questions like: "<em>What is the gender?</em>" and other questions that aim to get the personal information of a person. But in our case we need informations about entities, not only real person.</p>
+<p>Our thoughs were start with <strong>FOAF: Friend Of A Friend Ontology</strong>, we have some useful properties to describe real people (eg: Napoleone Bonaparte) and some useful general information about the person. It answer to some basic questions like: "<em>What is the gender?</em>" and other questions that aim to get the personal information of a person. But in our case we need informations about entities, not only real person, <strong>so we choose not to use FOAF</strong>.</p>
 <p><strong>EAC-CPF</strong>, from the archival context, is very useful in order to differentiate the three main types of but the most important thing is the role that a person has in relation of the item. Using EAC-CPF we can overpass this lack and add a very useful information (eg: here the questions are "<em>What is the role of this person, releated to the item?</em>" or "<em>Is this person the owner of the item? If yes, what kind of owner is it?</em>"). So, the way is to use <strong>EAC-CPF</strong>.</p>
 </section>
 <section id="section16">
@@ -103,9 +104,8 @@
 </section>
 <section id="section18">
 <h1>What (subject/concept)</h1>
-<p>Of course, our model has to describe the subject/concept proper of an item. Our mission, here, is to describe the item and the concept expressed by the item itself. We raised some questions on this matter, starting from "<em>What is the name of the current object?</em>", "<em>What is the language is which it is described?</em>", "<em>What type of object is this?</em>" or "<em>What is the content/concept that is represented by means of this object?</em>".</p>
-<p>Some of these questions are general and fully handled with the <a href="http://dublincore.org/documents/dces/" rel="noopener">Dublin Core Metadata Initiative</a>. This standard is the most used because: it is the most functional, its properties are very general and it grants a very high level of abstraction.</p>
-<p>TODO CIDOC-CRM</p>
+<p>The first question we raised is: "what we want to describe?" and we tought that the best way to do it, is to describe the concept related to the item. Of course, our model has also to describe the subject/concept proper of an item. Our mission, here, is to describe the item and the concept expressed by the item itself. We raised some questions on this matter, starting from "<em>What is the name of the concept?</em>", "<em>What type of entity is this?</em>", "<em>What is the subject or theme of item?</em>" or "<em>in which category the concept belongs?</em>" (<code>​General belongsToCategory Army</code>).</p>
+<p>Some of these questions are general and fully handled with the <a href="http://dublincore.org/documents/dces/" rel="noopener">Dublin Core Metadata Initiative</a> and <a href="https://www.w3.org/RDF/" rel="noopener">RDF(S)</a>. The <strong>DC standard</strong> is the most used because: it is the most functional, its properties are very general and it grants a very high level of abstraction. <a href="https://www.w3.org/TR/2008/WD-skos-reference-20080829/skos.html" rel="noopener">SKOS</a> is a standard that easily define what exaclty is a concept, so we adopted it in order to give the right definition of concept. <a href="http://www.cidoc-crm.org/" rel="noopener">CIDOC-CRM</a> is the best way to describe, in a general way, people linked to the concept. <a href="http://xmlns.com/foaf/spec/" rel="noopener">FOAF</a>, instead, allows us to introduce how a concept find its material representation (following the idea of <a href="http://wiki.dbpedia.org/" rel="noopener">DBPedia</a>).</p>
 </section>
 </section>
 <section id="section7">
@@ -210,6 +210,61 @@ xmlns:foaf="http://xmlns.com/foaf/0.1/"</code><code></code></pre>
 <section id="section20">
 <h1>Describe items using our model</h1>
 <p>In this section we are going to describe some items, using natural language, using our model. We have created a shared folder in <strong>Google Drive</strong> containing all the needed files <a href="https://drive.google.com/open?id=1YXpVIixVn0IR1Wn89T91GYNGBDvbuhsR" rel="noopener">here</a>.</p>
+<figure id="table_2">
+<table>
+
+<tr>
+<th>Item</th>
+<th>Who</th>
+<th>What</th>
+<th>Where</th>
+</tr>
+<tr>
+<td>
+<p><strong>Letter of surrender</strong></p>
+</td>
+<td>
+<p>Napoleon</p>
+</td>
+<td>
+<p>Surrender</p>
+</td>
+<td>
+<p>Rochefort</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Chapeau</strong></p>
+</td>
+<td>
+<p>Napoleon</p>
+</td>
+<td>
+<p>General</p>
+</td>
+<td>
+<p>Waterloo</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Armour</strong></p>
+</td>
+<td>
+<p>Fauveau</p>
+</td>
+<td>
+<p>Killed</p>
+</td>
+<td>
+<p>Waterloo</p>
+</td>
+</tr>
+
+</table>
+<figcaption>Caption.</figcaption>
+</figure>
 <section id="section22">
 <section id="section23"></section>
 </section>

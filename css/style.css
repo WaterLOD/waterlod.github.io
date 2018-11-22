@@ -1123,4 +1123,11 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .fh5co-heading {
+    width: 210px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

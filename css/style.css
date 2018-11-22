@@ -366,7 +366,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   border-radius: 50%;
 }
 .fh5co-testimonial .item p {
-  font-size: 30px;
+  font-size: 16px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-testimonial .item p {

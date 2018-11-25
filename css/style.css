@@ -1142,6 +1142,11 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 
 @media (max-width: 768px)
 #fh5co-logo > img {
-    width: 140px;
+    width: 140px !important;
 }
+
+#urlMark {
+  font-size: 13px !important;
+}
+
 /*# sourceMappingURL=style.css.map */

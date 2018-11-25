@@ -1152,4 +1152,10 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   }
 }
 
+@media (max-width: 320px){
+  #urlMark {
+    font-size: 11px !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

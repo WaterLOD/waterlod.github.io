@@ -1139,4 +1139,9 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 #subjectSection {
   margin-left: 29px !important;
 }
+
+@media (max-width: 768px)
+#fh5co-logo > img {
+    width: 140px;
+}
 /*# sourceMappingURL=style.css.map */

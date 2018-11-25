@@ -1130,4 +1130,9 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
     padding-top: 20px;
   }
 }
+
+#itemsDescription {
+  margin-left: -2px;
+  margin-right: -12px;
+}
 /*# sourceMappingURL=style.css.map */

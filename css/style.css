@@ -1140,13 +1140,16 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   margin-left: 29px !important;
 }
 
-@media (max-width: 768px)
-#fh5co-logo > img {
+@media (max-width: 768px){
+  #fh5co-logo > img {
     width: 140px !important;
+  }
 }
 
-#urlMark {
-  font-size: 13px !important;
+@media (max-width: 768px){
+  #urlMark {
+    font-size: 13px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

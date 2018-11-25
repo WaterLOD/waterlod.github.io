@@ -1137,6 +1137,6 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 
 #subjectSection {
-  margin-left: 29px;
+  margin-left: 29px !important;
 }
 /*# sourceMappingURL=style.css.map */

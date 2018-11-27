@@ -543,7 +543,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
   #teamGithub {
-    text-align: left;
+    text-align: left !important;
   }
 }
 .fh5co-social li a:hover {

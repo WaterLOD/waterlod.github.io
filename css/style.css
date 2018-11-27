@@ -830,6 +830,11 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .btn.btn-lg {
   padding: 18px 36px !important;
 }
+@media screen and (max-width: 768px) {
+  .btn.btn-lg {
+    padding: 12px 36px !important;
+  }
+}
 .btn:hover, .btn:active, .btn:focus {
   box-shadow: none !important;
   outline: none !important;

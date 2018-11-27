@@ -641,6 +641,13 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .fh5co-staff img {
   margin-bottom: 1em;
 }
+@media screen and (max-width: 768px) {
+    .fh5co-staff img {
+      margin-bottom: 1em;
+      width: 255px;
+  }
+}
+
 .fh5co-staff h3 {
   margin: 0;
 }

@@ -590,6 +590,14 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
     font-size: 40px;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  #iFeature {
+    position: relative;
+    left: -28px !important;
+  }
+}
+
 .fh5co-feature.fh5co-feature-sm .fh5co-icon i {
   color: #da1212;
   font-size: 28px;

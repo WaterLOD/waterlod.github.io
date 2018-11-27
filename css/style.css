@@ -47,6 +47,12 @@ figure {
   width: 100%;
 }
 
+mark {
+  background-color: #cc0000 !important;
+  opacity:0.8 !important;
+  color:white !important;
+}
+
 ::-webkit-selection {
   color: #fff;
   background: #da1212;
